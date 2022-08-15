@@ -29,8 +29,8 @@ class Employee {
         this.salary = salary;
     }
 
-    salaryOfYear() {
-        console.log(`salaryOfYear: ${this.salary} * 12`);
+    calculateYearSalary() {
+        console.log(this.salary * 12);
     }
 
     get fullName() {
@@ -44,4 +44,8 @@ const employeeFirst = new Employee ("Arthur", "Shanin", 28, "salesman", 15000);
 
 console.log(employeeFirst);
 console.log(employeeSecond);
-console.log(employeeFirst.salaryOfYear());
+employeeSecond.calculateYearSalary();
+employeeFirst.calculateYearSalary();
+
+
+
